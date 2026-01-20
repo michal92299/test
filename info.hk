@@ -1,0 +1,29 @@
+[metadata]
+-> name => hacker-calculator
+-> version => 1.2.0
+-> authors => HackerOS Team
+-> license => MIT
+-> bins
+--> hcalc
+
+[description]
+-> summary => Prosty kalkulator dla hakerów.
+-> long => To jest zaawansowany kalkulator terminalowy wspierający system binarny i hex.
+
+[specs]
+-> dependencies
+--> libc => >=2.31
+--> hpm-lib-ui => 0.5.0
+
+[sandbox]
+-> network => false
+-> gui => false
+-> dev => false
+-> filesystem
+--> /tmp
+--> /dev/null
+
+[install]
+-> commands
+--> chmod +x hcalc
+--> echo "Instalacja zakończona sukcesem"
