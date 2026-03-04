@@ -1,29 +1,30 @@
+! Konfiguracja pakietu Hacker Package Manager
+
 [metadata]
--> name => hacker-calculator
--> version => 1.2.0
--> authors => HackerOS Team
+-> name => test
+-> version => 0.1
+-> authors => "Twoje Imie <email@example.com>"
 -> license => MIT
 -> bins
---> hcalc
+--> test => ""
 
 [description]
--> summary => Prosty kalkulator dla hakerów.
--> long => To jest zaawansowany kalkulator terminalowy wspierający system binarny i hex.
+-> summary => Moja pierwsza aplikacja w HPM
+-> long => To jest dłuższy opis aplikacji, która robi niesamowite rzeczy w systemie HackerOS.
 
 [specs]
--> dependencies
---> libc => >=2.31
---> hpm-lib-ui => 0.5.0
+-> arch => x86_64
+-> os => HackerOS
+[specs.dependencies]
 
 [sandbox]
 -> network => false
 -> gui => false
 -> dev => false
--> filesystem
---> /tmp
---> /dev/null
+
+[sandbox.filesystem]
+-> /tmp => ""
 
 [install]
--> commands
---> chmod +x hcalc
---> echo "Instalacja zakończona sukcesem"
+[install.commands]
+-> echo "Instalowanie test..." => ""
