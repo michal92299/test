@@ -1,30 +1,27 @@
-! Konfiguracja pakietu Hacker Package Manager
-
 [metadata]
 -> name => test
--> version => 0.1
--> authors => "Twoje Imie <email@example.com>"
+-> version => 1.0.0
+-> authors => HackerOS Team
 -> license => MIT
--> bins
---> test => ""
+-> bins.hello => ""
 
 [description]
--> summary => Moja pierwsza aplikacja w HPM
--> long => To jest dłuższy opis aplikacji, która robi niesamowite rzeczy w systemie HackerOS.
-
-[specs]
--> arch => x86_64
--> os => HackerOS
-[specs.dependencies]
+-> summary => Example package that prints a greeting.
+-> long => This package is a simple demonstration of HPM packaging. It installs a 'hello' script that outputs a greeting.
 
 [sandbox]
 -> network => false
 -> gui => false
 -> dev => false
-
-[sandbox.filesystem]
--> /tmp => ""
+-> full_gui => false
+-> filesystem => {}
 
 [install]
-[install.commands]
--> echo "Instalowanie test..." => ""
+-> commands.run => ""
+
+[build]
+-> commands.build => ""
+-> deb_deps => {}
+
+[runtime]
+-> deb_deps => {}
