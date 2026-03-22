@@ -6,8 +6,8 @@
 -> bins.hello => ""
 
 [description]
--> summary => Example package that prints a greeting.
--> long => This package is a simple demonstration of HPM packaging. It installs a 'hello' script that outputs a greeting.
+-> summary => Test package
+-> long => This is a test package.
 
 [sandbox]
 -> network => false
