@@ -1,13 +1,13 @@
 [metadata]
--> name => test
+-> name => hello-hpm
 -> version => 1.0.0
 -> authors => HackerOS Team
 -> license => MIT
--> bins.hello => ""
+-> bins.hello-hpm => ""
 
 [description]
--> summary => Test package
--> long => This is a test package.
+-> summary => A minimal example package for the HackerOS Package Manager
+-> long => This package demonstrates the correct layout of an hpm package repository.
 
 [sandbox]
 -> network => false
@@ -16,11 +16,8 @@
 -> full_gui => false
 -> filesystem => {}
 
-[install]
--> commands.run => ""
-
 [build]
--> commands.build => ""
+-> commands => {}
 -> deb_deps => {}
 
 [runtime]
